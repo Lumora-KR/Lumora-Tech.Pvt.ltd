@@ -4,8 +4,8 @@ import { useInView } from "react-intersection-observer"
 import { useEffect, useState } from "react"
 
 const stats = [
-  { number: 500, suffix: "+", label: "Projects Completed", description: "Successfully delivered solutions" },
-  { number: 150, suffix: "+", label: "Happy Clients", description: "Satisfied customers worldwide" },
+  { number: 50, suffix: "+", label: "Projects Completed", description: "Successfully delivered solutions" },
+  { number: 50, suffix: "+", label: "Happy Clients", description: "Satisfied customers worldwide" },
   { number: 99.9, suffix: "%", label: "Uptime", description: "Reliable service guarantee" },
   { number: 24, suffix: "/7", label: "Support", description: "Round-the-clock assistance" },
 ]
