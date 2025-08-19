@@ -23,7 +23,7 @@ export function Footer() {
               Transforming businesses with advanced technology solutions. Your trusted partner in digital innovation.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <Link href="https://github.com/Lumora-KR/" className="text-gray-400 hover:text-purple-400 transition-colors">
                 <Github className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
@@ -120,15 +120,15 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-purple-400" />
-                <span className="text-gray-300 text-sm">contact@lumoratech.com</span>
+                <span className="text-gray-300 text-sm">heylumoratech@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-purple-400" />
-                <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-300 text-sm">+91 95857 38902, +91-7904154527</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-purple-400" />
-                <span className="text-gray-300 text-sm">San Francisco, CA</span>
+                <span className="text-gray-300 text-sm">vntc White Villa, lumora Office, west Tambaram,Chennai </span>
               </div>
             </div>
           </motion.div>
@@ -136,7 +136,7 @@ export function Footer() {
 
         <div className="border-t border-purple-500/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2024 LUMORA TECH. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2020 LUMORA TECH. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
                 Privacy Policy
