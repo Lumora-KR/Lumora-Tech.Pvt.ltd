@@ -125,7 +125,7 @@ export function FuturisticHeroSection() {
               {/* Main Astronaut Image with enhanced styling */}
               <div className="relative z-10 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-purple-500/20 p-8 border border-primary/30">
                 <img
-                  src="/futuristic-astronaut.png"
+                  src="/image/futuristic-astronaut.png"
                   alt="Futuristic Astronaut"
                   className="w-full h-auto rounded-full animate-float hover:scale-105 transition-transform duration-500"
                 />
@@ -155,9 +155,8 @@ export function FuturisticHeroSection() {
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className={`w-1 h-2 rounded-full transition-all duration-200 ${
-                            (aiActivity + i * 20) % 100 > 50 ? "bg-primary" : "bg-primary/30"
-                          }`}
+                          className={`w-1 h-2 rounded-full transition-all duration-200 ${(aiActivity + i * 20) % 100 > 50 ? "bg-primary" : "bg-primary/30"
+                            }`}
                         ></div>
                       ))}
                     </div>

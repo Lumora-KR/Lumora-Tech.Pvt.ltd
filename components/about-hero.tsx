@@ -47,8 +47,7 @@ export function AboutHero() {
             About LUMORA
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            We are a cutting-edge technology company dedicated to transforming businesses through innovative IT
-            solutions and advanced digital experiences.
+            Lumora Tech was born from a dream — a dream to build something meaningful and powerful with smart, passionate people. I started Lumora Tech by connecting creative minds from different fields, bringing together a team that believes in innovation, growth, and real impact. We’re a youth-driven company focused on developing massive programs and groundbreaking solutions that push limits and shape the digital future. At Lumora Tech, we don’t just work — we build, learn, and grow together as one team with one vision.
           </p>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

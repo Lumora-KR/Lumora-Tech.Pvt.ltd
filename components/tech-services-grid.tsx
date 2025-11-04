@@ -25,14 +25,14 @@ const services = [
     icon: Cloud,
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure and deployment",
-    image: "/placeholder-0txh0.png",
+    image: "/images/cloud.png",
     gradient: "from-green-500 to-teal-500",
   },
   {
     icon: Database,
     title: "Data Analytics",
     description: "Advanced data processing and business intelligence",
-    image: "/placeholder-9eph6.png",
+    image: "/images/Data-analyst.png",
     gradient: "from-orange-500 to-red-500",
   },
   {
