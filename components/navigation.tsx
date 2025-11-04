@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -31,11 +32,10 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "glass-effect shadow-2xl backdrop-blur-xl" : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? "glass-effect shadow-2xl backdrop-blur-xl" : "bg-transparent"
+        }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
             <Link
@@ -43,6 +43,27 @@ export function Navigation() {
               className="text-3xl font-bold font-serif animate-pulse-neon hover:scale-105 transition-transform duration-300"
             >
               LUMORA TECH
+            </Link>
+          </div> */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <div className="flex-shrink-0">
+            <Link
+              href="/"
+              className="flex items-center gap-3 text-3xl font-bold font-serif animate-pulse-neon hover:scale-105 transition-transform duration-300"
+            >
+
+              <Image
+                src={encodeURI("/images/svgviewer-output (1).svg")}
+                alt="Lumora Tech Logo"
+                width={100}
+                height={150}
+                priority
+                className="hover:rotate-6 transition-transform duration-500"
+              />
+
+              {/* Text beside the logo */}
+              <span>LUMORA TECH</span>
             </Link>
           </div>
 
@@ -52,9 +73,8 @@ export function Navigation() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`text-foreground hover:text-primary transition-all duration-300 relative group px-3 py-2 rounded-lg hover:bg-primary/10 ${
-                    pathname === item.href ? "text-primary bg-primary/20" : ""
-                  }`}
+                  className={`text-foreground hover:text-primary transition-all duration-300 relative group px-3 py-2 rounded-lg hover:bg-primary/10 ${pathname === item.href ? "text-primary bg-primary/20" : ""
+                    }`}
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -82,6 +102,7 @@ export function Navigation() {
         </div>
       </div>
 
+
       {isOpen && (
         <div className="md:hidden glass-effect animate-in slide-in-from-top-2 duration-300">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -89,9 +110,8 @@ export function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`block px-3 py-2 text-foreground hover:text-primary transition-all duration-300 rounded-lg hover:bg-primary/10 ${
-                  pathname === item.href ? "text-primary bg-primary/20" : ""
-                }`}
+                className={`block px-3 py-2 text-foreground hover:text-primary transition-all duration-300 rounded-lg hover:bg-primary/10 ${pathname === item.href ? "text-primary bg-primary/20" : ""
+                  }`}
                 style={{ animationDelay: `${index * 50}ms` }}
                 onClick={() => setIsOpen(false)}
               >
@@ -105,7 +125,9 @@ export function Navigation() {
             </div>
           </div>
         </div>
-      )}
-    </nav>
+      )
+      }
+
+    </nav >
   )
 }
