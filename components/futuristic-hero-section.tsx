@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Zap, Shield, Brain, Activity, Cpu, Wifi } from "lucide-react"
+
 import Link from "next/link"
 
 export function FuturisticHeroSection() {
@@ -125,7 +126,7 @@ export function FuturisticHeroSection() {
               {/* Main Astronaut Image with enhanced styling */}
               <div className="relative z-10 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-purple-500/20 p-8 border border-primary/30">
                 <img
-                  src="/image/futuristic-astronaut.png"
+                  src="/images/futuristic-astronaut.jpg"
                   alt="Futuristic Astronaut"
                   className="w-full h-auto rounded-full animate-float hover:scale-105 transition-transform duration-500"
                 />
