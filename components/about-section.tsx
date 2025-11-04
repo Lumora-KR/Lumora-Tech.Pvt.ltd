@@ -18,21 +18,21 @@ export function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">
             About <span className="text-primary">LUMORA TECH</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We are a forward-thinking IT company dedicated to transforming businesses through innovative technology
             solutions. Our expert team combines cutting-edge technology with deep industry knowledge to deliver
             exceptional results.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
+            <h3 className="text-3xl font-bold mb-6">About the Founder's and Our Mission</h3>
             <p className="text-lg text-muted-foreground mb-6">
               To empower businesses with advanced technology solutions that drive growth, enhance efficiency, and create
               competitive advantages in the digital landscape.
             </p>
-            <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
+            <h3 className="text-3xl font-bold mb-6">Our Vision </h3>
             <p className="text-lg text-muted-foreground">
               To be the leading provider of innovative IT solutions, setting new standards for excellence in technology
               services and products worldwide.
@@ -80,6 +80,6 @@ export function AboutSection() {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   )
 }

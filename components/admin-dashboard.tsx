@@ -146,13 +146,12 @@ export function AdminDashboard() {
                     </div>
                     <div className="w-full bg-muted rounded-full h-2">
                       <div
-                        className={`h-2 rounded-full ${
-                          metric.status === "good"
+                        className={`h-2 rounded-full ${metric.status === "good"
                             ? "bg-green-500"
                             : metric.status === "normal"
                               ? "bg-blue-500"
                               : "bg-yellow-500"
-                        }`}
+                          }`}
                         style={{ width: metric.value }}
                       />
                     </div>
