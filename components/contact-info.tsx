@@ -18,7 +18,7 @@ const contactDetails = [
   {
     icon: Mail,
     title: "Email Addresses",
-    details: ["heylumoratech.com", "ramkumarudhayakumar.com"],
+    details: ["heylumoratech@gmail.com"],
   },
   {
     icon: Clock,
