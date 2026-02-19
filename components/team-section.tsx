@@ -5,18 +5,26 @@ import Image from "next/image"
 
 const teamMembers = [
   {
-    name: "Ram Kumar",
-    role: "Founder & Full Stack Developer",
+    name: "Kerthik Rosan Kr ",
+    role: "Founder & AI Specialist & Cyber Security Expert"
     image: "/professional-man-avatar.png",
-    bio: "Visionary leader with 10+ years in tech innovation",
+    bio: "Expert in AI and machine learning technologies"
+
+  },
+   name: "Aakash",
+    role: "Co-Founder  Senior Full Stack Developer"
+    image: "/professional-man-avatar.png",
+     
+    bio: "Visionary leader with 10+ years in tech innovation"
   },
   {
-    name: "Kerthik Rosan",
-    role: "Founder & AI Specialist & Cyber Security Expert",
+    name: "Ram Kumar",
+    role: "Co-Founder Full Stack Developer"
     image: "/professional-man-avatar.png",
-
-    bio: "Expert in AI and machine learning technologies",
+     
+    bio: "Visionary leader with 5+ years in tech innovation"
   },
+   
   {
     name: "Dinesh Kumar",
     role: "CTO & ML Engineer",
@@ -30,14 +38,14 @@ const teamMembers = [
     bio: "Full-stack developer specializing in modern frameworks",
   },
   {
-    name: "Mohammad Hithyathulla",
+    name: "Aravind",
     role: "UI/UX Designer",
     image: "/professional-man-avatar.png",
     bio: "Creative designer focused on user-centered experiences",
   },
 
   {
-    name: "Vinoth Kumar",
+    name: "Rojith",
     role: "Data Scientist",
     image: "/professional-man-avatar.png",
     bio: "Data analyst with a passion for turning data into insights",
