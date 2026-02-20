@@ -6,23 +6,22 @@ import Image from "next/image"
 const teamMembers = [
   {
     name: "Kerthik Rosan Kr ",
-    role: "Founder & AI Specialist & Cyber Security Expert"
+    role: "Founder & AI Specialist & Cyber Security Expert",
     image: "/professional-man-avatar.png",
-    bio: "Expert in AI and machine learning technologies"
+    bio: "Expert in AI and machine learning technologies",
 
   },
+  {
    name: "Aakash",
-    role: "Co-Founder  Senior Full Stack Developer"
-    image: "/professional-man-avatar.png",
-     
-    bio: "Visionary leader with 10+ years in tech innovation"
+    role: "Co-Founder  Senior Full Stack Developer",
+    image: "/professional-man-avatar.png", 
+    bio: "Visionary leader with 10+ years in tech innovation",
   },
   {
     name: "Ram Kumar",
-    role: "Co-Founder Full Stack Developer"
+    role: "Co-Founder Full Stack Developer",
     image: "/professional-man-avatar.png",
-     
-    bio: "Visionary leader with 5+ years in tech innovation"
+    bio: "Visionary leader with 5+ years in tech innovation",
   },
    
   {
