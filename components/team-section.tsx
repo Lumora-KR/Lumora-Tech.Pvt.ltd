@@ -25,7 +25,7 @@ const teamMembers = [
   },
    
   {
-    name: "Dinesh Kumar",
+    name: "Dinesh",
     role: "CTO & ML Engineer",
     image: "/professional-man-avatar.png",
     bio: "Machine learning engineer with a passion for AI solutions",
