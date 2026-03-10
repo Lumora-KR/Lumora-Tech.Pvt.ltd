@@ -13,12 +13,12 @@ const contactDetails = [
   {
     icon: Phone,
     title: "Phone Numbers",
-    details: ["+91 7904154527", "+91 95857 38902"],
+    details: ["+91 7904154527"],
   },
   {
     icon: Mail,
     title: "Email Addresses",
-    details: ["heylumoratech.com", "ramkumarudhayakumar.com"],
+    details: ["heylumoratech@gmail.com"],
   },
   {
     icon: Clock,
