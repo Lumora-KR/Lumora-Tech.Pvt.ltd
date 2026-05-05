@@ -7,7 +7,7 @@ import { TechnologiesSection } from "@/components/technologies-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
-
+// checking for a commit in github
 export default function Home() {
   return (
     <main className="relative">
