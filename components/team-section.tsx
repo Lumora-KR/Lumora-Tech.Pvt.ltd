@@ -7,46 +7,43 @@ const teamMembers = [
   {
     name: "Kerthik Rosan Kr ",
     role: "Founder & AI Specialist & Cyber Security Expert",
-    image: "/professional-man-avatar.png",
+    image: "/team/kerthik.png",
     bio: "Expert in AI and machine learning technologies",
-
   },
   {
    name: "Aakash",
     role: "Co-Founder  Senior Full Stack Developer",
-    image: "/professional-man-avatar.png", 
+    image: "/team/aakash.png", 
     bio: "Visionary leader with 10+ years in tech innovation",
   },
   {
     name: "Ram Kumar",
     role: "Co-Founder Full Stack Developer",
-    image: "/professional-man-avatar.png",
+    image: "/team/ram.png",
     bio: "Visionary leader with 5+ years in tech innovation",
   },
-   
   {
     name: "Dinesh",
     role: "CTO & ML Engineer",
-    image: "/professional-man-avatar.png",
+    image: "/team/dinesh.png",
     bio: "Machine learning engineer with a passion for AI solutions",
   },
   {
     name: "Renuga",
     role: "Lead Developer",
-    image: "/professional-woman-tech-avatar.png",
+    image: "/team/renuga.png",
     bio: "Full-stack developer specializing in modern frameworks",
   },
   {
     name: "Aravind",
     role: "UI/UX Designer",
-    image: "/professional-man-avatar.png",
+    image: "/team/aravind.png",
     bio: "Creative designer focused on user-centered experiences",
   },
-
   {
     name: "Rojith",
     role: "Data Scientist",
-    image: "/professional-man-avatar.png",
+    image: "/team/rojith.png",
     bio: "Data analyst with a passion for turning data into insights",
   },
 ]
