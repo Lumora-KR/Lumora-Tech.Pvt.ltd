@@ -30,10 +30,10 @@ export function FuturisticHeroSection() {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-primary/5"></div>
 
-      {/* Enhanced Floating Geometric Shapes */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Enhanced Floating Geometric Shapes — hidden on small mobile for perf */}
+      <div className="absolute inset-0 overflow-hidden hidden sm:block">
         <div
-          className="absolute w-96 h-96 rounded-full bg-gradient-to-r from-primary/20 to-purple-500/20 blur-3xl animate-float"
+          className="absolute w-64 md:w-96 h-64 md:h-96 rounded-full bg-gradient-to-r from-primary/20 to-purple-500/20 blur-3xl animate-float"
           style={{
             transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`,
             top: "10%",
@@ -41,7 +41,7 @@ export function FuturisticHeroSection() {
           }}
         ></div>
         <div
-          className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 blur-2xl animate-float-delayed"
+          className="absolute w-48 md:w-64 h-48 md:h-64 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 blur-2xl animate-float-delayed"
           style={{
             transform: `translate(${mousePosition.x * -0.01}px, ${mousePosition.y * -0.01}px)`,
             top: "60%",
@@ -49,7 +49,7 @@ export function FuturisticHeroSection() {
           }}
         ></div>
         <div
-          className="absolute w-32 h-32 rounded-full bg-gradient-to-r from-cyan-500/30 to-blue-500/30 blur-xl animate-float"
+          className="absolute w-24 md:w-32 h-24 md:h-32 rounded-full bg-gradient-to-r from-cyan-500/30 to-blue-500/30 blur-xl animate-float"
           style={{
             transform: `translate(${mousePosition.x * 0.03}px, ${mousePosition.y * 0.03}px)`,
             top: "30%",
@@ -58,29 +58,29 @@ export function FuturisticHeroSection() {
         ></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 sm:pt-16 lg:pt-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold font-serif">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-serif">
                 <span className="bg-gradient-to-r from-primary via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient">
                   FUTURE
                 </span>
                 <br />
                 <span className="text-foreground">TECHNOLOGY</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-                Pioneering tomorrow's solutions today. We deliver cutting-edge IT services and products that transform
+              <p className="text-base sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
+                Pioneering tomorrow&apos;s solutions today. We deliver cutting-edge IT services and products that transform
                 businesses in the digital era.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-primary to-purple-600 hover:from-purple-600 hover:to-primary text-white px-8 py-6 text-lg animate-glow hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-primary to-purple-600 hover:from-purple-600 hover:to-primary text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg animate-glow hover:scale-105 transition-all duration-300"
               >
                 <Link href="/services">
                   Explore Services <ArrowRight className="ml-2 h-5 w-5" />
@@ -90,32 +90,32 @@ export function FuturisticHeroSection() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-primary/50 hover:bg-primary/10 px-8 py-6 text-lg hover:scale-105 transition-all duration-300 bg-transparent"
+                className="border-primary/50 hover:bg-primary/10 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover:scale-105 transition-all duration-300 bg-transparent"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
 
             {/* Enhanced Feature Pills with animations */}
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:scale-105">
+            <div className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
+              <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:scale-105">
                 <Zap className="h-4 w-4 text-primary animate-pulse" />
-                <span className="text-sm">Lightning Fast</span>
+                <span className="text-xs sm:text-sm">Lightning Fast</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:scale-105">
+              <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:scale-105">
                 <Shield className="h-4 w-4 text-primary animate-bounce" />
-                <span className="text-sm">Secure & Reliable</span>
+                <span className="text-xs sm:text-sm">Secure & Reliable</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:scale-105">
+              <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:scale-105">
                 <Brain className="h-4 w-4 text-primary animate-spin-slow" />
-                <span className="text-sm">AI-Powered</span>
+                <span className="text-xs sm:text-sm">AI-Powered</span>
               </div>
             </div>
           </div>
 
           {/* Right Content - Enhanced Astronaut Image */}
-          <div className="relative">
-            <div className="relative w-full max-w-lg mx-auto">
+          <div className="relative mt-8 lg:mt-0">
+            <div className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-lg mx-auto">
               {/* Enhanced Glowing Ring Effect */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/30 to-purple-500/30 blur-2xl animate-pulse"></div>
               <div
@@ -124,7 +124,7 @@ export function FuturisticHeroSection() {
               ></div>
 
               {/* Main Astronaut Image with enhanced styling */}
-              <div className="relative z-10 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-purple-500/20 p-8 border border-primary/30">
+              <div className="relative z-10 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-purple-500/20 p-4 sm:p-6 md:p-8 border border-primary/30">
                 <img
                   src="/images/futuristic-astronaut.jpg"
                   alt="Futuristic Astronaut"
@@ -132,32 +132,33 @@ export function FuturisticHeroSection() {
                 />
               </div>
 
-              {/* Enhanced Floating UI Elements */}
-              <div className="absolute -top-4 -right-4 bg-background/90 backdrop-blur-md border border-green-500/30 rounded-lg p-3 animate-float-delayed hover:scale-110 transition-all duration-300 shadow-lg shadow-green-500/20">
+              {/* Enhanced Floating UI Elements — hidden on very small mobile to prevent overflow */}
+              <div className="hidden sm:block absolute -top-4 -right-4 bg-background/90 backdrop-blur-md border border-green-500/30 rounded-lg p-2 sm:p-3 animate-float-delayed hover:scale-110 transition-all duration-300 shadow-lg shadow-green-500/20">
                 <div className="flex items-center gap-2">
                   <div className="relative">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <div className="absolute inset-0 w-3 h-3 bg-green-500 rounded-full animate-ping opacity-30"></div>
+                    <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    <div className="absolute inset-0 w-2.5 sm:w-3 h-2.5 sm:h-3 bg-green-500 rounded-full animate-ping opacity-30"></div>
                   </div>
-                  <span className="text-sm font-medium text-green-400">System Online</span>
+                  <span className="text-xs sm:text-sm font-medium text-green-400">System Online</span>
                   <Wifi className="h-3 w-3 text-green-400 animate-pulse" />
                 </div>
               </div>
 
-              <div className="absolute -bottom-4 -left-4 bg-background/90 backdrop-blur-md border border-primary/30 rounded-lg p-3 animate-float hover:scale-110 transition-all duration-300 shadow-lg shadow-primary/20">
-                <div className="flex items-center gap-3">
+              <div className="hidden sm:block absolute -bottom-4 -left-4 bg-background/90 backdrop-blur-md border border-primary/30 rounded-lg p-2 sm:p-3 animate-float hover:scale-110 transition-all duration-300 shadow-lg shadow-primary/20">
+                <div className="flex items-center gap-2 sm:gap-3">
                   <div className="relative">
                     <Brain className="h-4 w-4 text-primary animate-pulse" />
                     <div className="absolute -inset-1 bg-primary/20 rounded-full animate-ping"></div>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-sm font-medium text-primary">AI Active</span>
+                    <span className="text-xs sm:text-sm font-medium text-primary">AI Active</span>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className={`w-1 h-2 rounded-full transition-all duration-200 ${(aiActivity + i * 20) % 100 > 50 ? "bg-primary" : "bg-primary/30"
-                            }`}
+                          className={`w-1 h-2 rounded-full transition-all duration-200 ${
+                            (aiActivity + i * 20) % 100 > 50 ? "bg-primary" : "bg-primary/30"
+                          }`}
                         ></div>
                       ))}
                     </div>
@@ -166,7 +167,7 @@ export function FuturisticHeroSection() {
               </div>
 
               <div
-                className="absolute top-1/2 -left-8 bg-background/90 backdrop-blur-md border border-blue-500/30 rounded-lg p-2 animate-float hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-500/20"
+                className="hidden md:block absolute top-1/2 -left-8 bg-background/90 backdrop-blur-md border border-blue-500/30 rounded-lg p-2 animate-float hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-500/20"
                 style={{ animationDelay: "0.5s" }}
               >
                 <div className="flex items-center gap-2">
@@ -178,7 +179,7 @@ export function FuturisticHeroSection() {
                 </div>
               </div>
 
-              <div className="absolute top-1/4 -right-8 bg-background/90 backdrop-blur-md border border-purple-500/30 rounded-lg p-2 animate-float-delayed hover:scale-110 transition-all duration-300 shadow-lg shadow-purple-500/20">
+              <div className="hidden md:block absolute top-1/4 -right-8 bg-background/90 backdrop-blur-md border border-purple-500/30 rounded-lg p-2 animate-float-delayed hover:scale-110 transition-all duration-300 shadow-lg shadow-purple-500/20">
                 <div className="flex items-center gap-2">
                   <Activity className="h-3 w-3 text-purple-400 animate-bounce" />
                   <div className="flex flex-col">

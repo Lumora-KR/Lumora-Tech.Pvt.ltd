@@ -11,7 +11,7 @@ export default function ContactPage() {
       <ParticlesBackground />
       <Navigation />
       <ContactHero />
-      <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-4 py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <ContactForm />
         <ContactInfo />
       </div>

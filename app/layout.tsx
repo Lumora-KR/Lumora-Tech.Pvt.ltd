@@ -1,7 +1,8 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Orbitron, Inter, JetBrains_Mono } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 import "./globals.css"
 
 const orbitron = Orbitron({
@@ -25,6 +26,13 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500", "600", "700"],
 })
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+}
+
 export const metadata: Metadata = {
   title: "LUMORA TECH - Advanced IT Solutions",
   description: "Transforming Business with Advanced Technology - IT Services & Products",
@@ -38,9 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${orbitron.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
+          <WhatsAppButton />
         </ThemeProvider>
       </body>
     </html>

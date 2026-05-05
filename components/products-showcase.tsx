@@ -124,11 +124,23 @@ const products = [
   },
 ]
 
+interface Product {
+  icon: React.ElementType
+  title: string
+  description: string
+  features: string[]
+  image: string
+  detailedDescription: string
+  technicalSpecs: string[]
+  pricing: string
+  demoUrl: string
+}
+
 export function ProductsShowcase() {
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const handleLearnMore = (product) => {
+  const handleLearnMore = (product: Product) => {
     setSelectedProduct(product)
     setIsModalOpen(true)
   }

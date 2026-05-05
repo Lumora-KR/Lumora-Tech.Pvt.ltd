@@ -79,7 +79,7 @@ export function StatsSection() {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="relative p-8 rounded-2xl glass-effect hover:bg-primary/5 transition-all duration-300">
-                <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent mb-2">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent mb-2">
                   <CountUp end={stat.number} />
                   {stat.suffix}
                 </div>

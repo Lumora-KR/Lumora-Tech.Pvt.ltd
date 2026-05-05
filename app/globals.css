@@ -458,4 +458,46 @@
     mask-composite: xor;
     animation: circuit-glow 3s ease-in-out infinite;
   }
+
+  /* Mobile sidebar slide-in animation */
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Responsive section padding for mobile */
+  .section-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-padding {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Ensure text doesn't overflow on mobile */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Safe area for notched devices */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
 }
