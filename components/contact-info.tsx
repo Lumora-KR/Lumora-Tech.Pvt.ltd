@@ -8,7 +8,7 @@ const contactDetails = [
   {
     icon: MapPin,
     title: "Office Location",
-    details: ["VNTC White Villa ,West Tambaram", "Chennai"],
+    details: ["Main Branch :", "Eashwaran Layout", "Indira Nagar", "Bangalore - 560038"],
   },
   {
     icon: Phone,
@@ -101,14 +101,18 @@ export function ContactInfo() {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <Card className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 border-gray-700/50 overflow-hidden">
-          <CardContent className="p-0">
-            <div className="h-48 bg-gradient-to-br from-emerald-900/20 to-blue-900/20 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-emerald-400 mx-auto mb-2" />
-                <p className="text-gray-400">Interactive Map</p>
-                <p className="text-sm text-gray-500">Coming Soon</p>
-              </div>
-            </div>
+          <CardContent className="p-0 h-48 sm:h-64 relative">
+            <iframe
+              src="https://maps.google.com/maps?q=Eashwaran%20Layout,%20Indira%20Nagar,%20Bangalore%20-%20560038&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="150%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
+              title="Office Location Map"
+            />
           </CardContent>
         </Card>
       </motion.div>

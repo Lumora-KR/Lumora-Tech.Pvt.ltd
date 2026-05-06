@@ -5,7 +5,7 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Kerthik Rosan",
+    name: "Shiva Kumar.K",
     role: "CTO, Fambyte",
     content:
       "LUMORA TECH transformed our entire infrastructure. Their AI-powered solutions increased our efficiency by 300% and reduced operational costs significantly.",
@@ -13,7 +13,7 @@ const testimonials = [
     avatar: "/professional-man-avatar.png",
   },
   {
-    name: "Aakash Sundar",
+    name: "Sharuk",
     role: "Project Manager , Doodle blue",
     content:
       "The team's expertise in cloud computing and DevOps helped us scale from 1K to 1M users seamlessly. Outstanding technical knowledge and support.",
@@ -21,11 +21,11 @@ const testimonials = [
     avatar: "/professional-man-avatar.png",
   },
   {
-    name: "Lalith Vinothan",
+    name: "Jenifer",
     role: "VP Engineering, Adonis",
     content:
       "Their cybersecurity solutions are top-notch. We've had zero security incidents since implementing their advanced protection systems.",
-    rating: 5,
+    rating: 4,
     avatar: "/professional-woman-tech-avatar.png",
   },
 ]

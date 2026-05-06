@@ -128,7 +128,7 @@ export function Footer() {
               </a>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300 text-sm leading-relaxed">vntc White Villa, Lumora Office, West Tambaram, Chennai</span>
+                <span className="text-gray-300 text-sm leading-relaxed">Main Branch : Eashwaran Layout,Indira Nagar, Bangalore - 560038 </span>
               </div>
             </div>
           </motion.div>
